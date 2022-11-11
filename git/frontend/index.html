@@ -3,58 +3,80 @@
         <header>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>Abarrotes BALU</title>
+            <title>Help Friend</title>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <style>
-            body {font-family: Arial, Helvetica, sans-serif;}
-    
+            body{
+                font: "Century Gothic"; 
+                background-image: linear-gradient(#cc3399, #000);
+                color: #fff;
+            }
             .navbar {
-            width: 100%;
-            background-color: #555;
-            overflow: auto;
+                background-color: #000;
+                display:flex;
+                align-items: center;
             }
-    
-            .navbar a {
-            float: left;
-            padding: 12px;
-            color: white;
-            text-decoration: none;
-            font-size: 17px;
+            #container{
+                display: flex;
+                justify-content: space-evenly;
+                margin: 60px;
             }
-    
-            .navbar a:hover {
-            background-color: #000;
+            #item2, #item3, #item4{
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
-    
-            .active {
-            background-color: #04AA6D;
-            }
-    
-            @media screen and (max-width: 500px) {
-            .navbar a {
-                float: none;
-                display: block;
-            }
+            #btn_signup, #btn_login{
+                border-radius: 30px;
+                width: 350px;
+                padding:12px;
+                margin-bottom: 40px;
+                background-color: #000;
+                color: #fff;
             }
             </style>
     </header>
-    
         <body>
             <div class="navbar">
-                <br>
-                <a class="active" href="/templates/get_clientes.html"><i class="fa fa-fw fa-list"></i>Listar Clientes</a> 
-                <a href="/templates/post_cliente.html"><i class="fa fa-fw fa-user"></i> Insertar</a>  
-                <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-                <a href="/templates/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-                <a href="/templates/registro.html"><i class="fa fa-fw fa-user"></i> Registrate</a>
+                <div>Help Friend</div>
+                <div><img src="scr/logo_empresa.png" style="height:30px; margin-left: 1070px;"></img></div>
             </div>
-            
-            <center><h1>Bienvenido a ABARROTES BALU</h1></center>
-            
+            <div>
+                <div id="container">
+                    <div id="item1">
+                        <h1><b>BIENVENIDO/A</b></h1>
+                        <h2><b>¿Que es HELP FRIEND?</b></h2>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor<br>
+                            in reprehenderit in voluptate.
+                        </h4>
+                        <h2><b>¿Como funciona?</b></h2>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br>
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor<br>
+                            in reprehenderit in voluptate.
+                        </h4>
+                    </div>
+                    <div id="container2">
+                        <div id="item2">
+                          <image src="scr/logobienvenida.png" style="width:50%"></image>  
+                        </div>
+                        <div id="item3">
+                           <button id="btn_signup">Registrarse</button> 
+                        </div>
+                        <div id="item4">
+                           <button id="btn_login">Iniciar sesion</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </body>
     </html>
 </html>
